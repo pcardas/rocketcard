@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- DESCRIPTION -->
+    <meta name="description" content="Rocketcard using Github API" />
+    <!-- PAGE TITLE -->
+    <title>Rocketcard</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="global.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <!-- FAVICON -->
+    <link rel="icon" href="assets/logo.svg" />
+    <!-- SCRIPT -->
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="rocketcard">
+      <div class="card">
+        <div class="card-header">
+          <img src="./assets/logo.svg" alt="Rocketseat logo" />
+          <p class="username">birobirobiro</p>
+        </div>
+
+        <div class="avatar-img"></div>
+
+        <ul class="stats">
+          <!-- Followers -->
+          <li>
+            <img src="./assets/followers.svg" alt="Followers" />
+            <span class="followers"></span>
+          </li>
+          <!-- Following -->
+          <li>
+            <img src="./assets/following.svg" alt="Following" />
+            <span class="following"></span>
+          </li>
+          <!-- Repository -->
+          <li>
+            <img src="./assets/repository.svg" alt="Repository" />
+            <span class="repository"></span>
+          </li>
+          <!-- Company -->
+          <li>
+            <img src="./assets/company.svg" alt="Company" />
+            <span class="company"></span>
+          </li>
+          <!-- Location -->
+          <li>
+            <img src="./assets/location.svg" alt="Location" />
+            <span class="location"></span>
+          </li>
+        </ul>
+        <!-- Rocketcard -->
+        <div class="card-footer">
+          <img src="./assets/logo.svg" alt="Rocketcard" />
+          <p>ROCKETCARD</p>
+        </div>
+      </div>
+      <div class="custom-tab">
+        <div>
+          <h3>Customizar Rocketcard</h3>
+          <button type="button" onclick="changeColor()">
+            Gerar background
+          </button>
+        </div>
+        <form>
+          <input
+            type="text"
+            placeholder="willnorris"
+            id="input_value"
+            class="input_value"
+          />
+          <i class="fa fa-search"></i>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

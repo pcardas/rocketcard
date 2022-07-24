@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@100;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+:root {
+  --bg: #000;
+  --bg-card: #0e1218;
+  --text: #f1f1f1;
+  --img-profile: #8257e5;
+  --buttons: #fff;
+  --border-button: #1a1a1a;
+}
+
+body,
+button,
+textarea,
+input {
+  color: var(--text);
+  background-color: var(--bg-card);
+  font: 400 1rem 'Prompt', sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  border: 0;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+.rocketcard {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  gap: 355px;
+}
+
+/* CARD */
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  transform: translateX(366px);
+  border-radius: 50px;
+
+  height: 644px;
+  width: 407px;
+  margin-right: 150px;
+
+  border-color: var(--bg);
+  border-width: 24px 15px 25px 16px;
+  border-style: solid;
+  overflow: hidden;
+  outline: 1px solid rgb(255, 255, 255, 0.5);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  height: 55px;
+  width: 230px;
+  font-size: 24px;
+  margin-top: 37px;
+  margin-left: 33px;
+}
+
+.card-header img {
+  height: 55px;
+  width: 55px;
+  justify-self: flex-start;
+
+  border-radius: 50%;
+
+  border: var(--buttons) 1px solid;
+}
+
+.avatar-img {
+  position: absolute;
+  left: 89px;
+  top: 134px;
+  width: 370px;
+  height: 372px;
+  border-radius: 50%;
+  border: var(--img-profile) 10px solid;
+  background-image: url(./assets/logo.svg);
+  background-repeat: none;
+  background-size: cover;
+  background-position: center;
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 8px;
+  position: absolute;
+  left: 21px;
+  bottom: 96px;
+  list-style: none;
+  height: 195px;
+  width: 195px;
+  border-radius: 50px;
+  background-image: url(./assets/bg-gradient.svg);
+  background-repeat: none;
+  background-size: cover;
+  background-position: center;
+  z-index: 2;
+}
+
+.stats li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+.stats li img {
+  height: 20px;
+  width: 20px;
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  align-self: flex-end;
+  gap: 11px;
+  position: absolute;
+  bottom: 27px;
+  right: 15px;
+  font-size: 20px;
+}
+
+.card-footer img {
+  height: 34px;
+  width: 27px;
+}
+
+.custom-tab {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: flex-start;
+  gap: 33px;
+}
+
+.custom-tab button {
+  padding: 19px 46px;
+  background-color: var(--bg);
+  border: var(--border-button) 2px solid;
+  color: #c0c0c0;
+  border-radius: 15px;
+}
+
+form {
+  position: relative;
+  top: 50%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  transition: all 1s;
+  width: 100%;
+  height: 50px;
+  background: white;
+  box-sizing: border-box;
+  border-radius: 25px;
+  border: 4px solid white;
+  padding: 5px;
+  margin-top: 24px;
+  margin-left: 90px;
+}
+
+input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 42.5px;
+  line-height: 30px;
+  outline: 0;
+  border: 0;
+  display: block;
+  font-size: 1em;
+  border-radius: 20px;
+  padding: 0 20px;
+}
+
+.fa {
+  box-sizing: border-box;
+  padding: 10px;
+  width: 42.5px;
+  height: 42.5px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  font-size: 1.2em;
+  /*  transition: all 1s; */
+  cursor: pointer;
+}
+
+/* form:hover {
+  width: 100%;
+  margin-left: 90px;
+  cursor: pointer;
+}
+
+form:hover input {
+  display: block;
+}
+
+form:hover .fa {
+  background: #07051a;
+  color: white;
+} */
