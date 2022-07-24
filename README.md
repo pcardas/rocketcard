@@ -19,7 +19,7 @@
 </p>
 
 <p align="center">
-  <img src="/assets/preview.webp" width="100%" />
+  <img src="/assets/preview.png" width="100%" />
 </p>
 
 ## 💻 Project
@@ -35,7 +35,7 @@ In order to know the format and how the project should be developed, it was used
 - HTML
 - CSS
 - JavaScript
-- [API Github](https://docs.github.com/pt/rest)
+- [Github API](https://docs.github.com/pt/rest)
 
 ## 📔 Table of Contents
 
